@@ -1,6 +1,7 @@
 # Курс валют
 
-Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли. Архитектруный паттерн VIPER + Unit test
+Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли. 
+Архитектруный паттерн VIPER + Unit test 
 Переписываю свой [Pet project](https://github.com/VasiliyChistyakov/Ruble) на более масштабируемую архитектуру
 
 - URLSession
