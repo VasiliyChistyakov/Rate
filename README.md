@@ -1,16 +1,13 @@
 # Курс валют
 
-Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли. 
-Архитектруный паттерн VIPER + Unit test 
-Переписываю свой [Pet project](https://github.com/VasiliyChistyakov/Ruble) на более масштабируемую архитектуру
+Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли. Переписываю свой [Pet project](https://github.com/VasiliyChistyakov/Ruble) на более масштабируемую архитектуру
 
+- VIPER + Unit test 
 - URLSession
 - JSON
 - MVC
 - UIKit
 - Combine
-- VIPER
-- Unit test
 
 <img src="https://user-images.githubusercontent.com/81886542/148717354-ec41fff8-7914-401c-90fe-6c18c79882c1.png" width="300" />
 
