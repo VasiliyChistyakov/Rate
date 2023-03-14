@@ -1,6 +1,6 @@
 # Курс валют
 
-Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли. Переписываю свой [Pet project](https://github.com/VasiliyChistyakov/Ruble) на более масштабируемую архитектуру
+Приложение использует API [ЦБ РФ](https://www.cbr-xml-daily.ru), для перевода в Рубли.
 
 - VIPER + Unit test 
 - URLSession
