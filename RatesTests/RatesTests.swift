@@ -10,12 +10,12 @@ import XCTest
 
 // MARK: - MockView
 class MockView: MainViewProtocol {
-    var modelTest: RatesModel?
+    var modelTest: MainExchangeRates?
     var nameTest: String?
     var inputTest: String?
     var outputTest: String?
     
-    func showCurrency(_ showList: RatesModel?) {
+    func showCurrency(_ showList: MainExchangeRates?) {
         self.modelTest = showList
     }
     
@@ -34,14 +34,14 @@ class MockView: MainViewProtocol {
 
 // MARK: - MockNetworkService
 class MockNetworkService: APIService {
-    var model: RatesModel!
+    var model: MainExchangeRates!
     
-    convenience init(model: RatesModel) {
+    convenience init(model: MainExchangeRates) {
         self.init()
         self.model = model
     }
         
-    func fetchRates(urlJson: String, complitionHandler: @escaping (RatesModel) -> Void) {
+    func fetchRates(urlJson: String, complitionHandler: @escaping (MainExchangeRates) -> Void) {
         if let model = model {
             complitionHandler(model)
         } else {
@@ -54,7 +54,7 @@ class MockNetworkService: APIService {
 class RatesTests: XCTestCase {
     var view: MockView!
     var netowkService: APIService!
-    var model: RatesModel!
+    var model: MainExchangeRates!
 
     override func setUp() {
         
@@ -73,7 +73,7 @@ class RatesTests: XCTestCase {
     func testGetRates() {
         let urlJson = "https://www.cbr-xml-daily.ru/daily_json.js"
         
-        let valute = ["Foo": Valute(
+        let valute = ["Foo": MainRates(
             id: "Foo",
             numCode: "Bar",
             charCode: "Baz",
@@ -81,7 +81,7 @@ class RatesTests: XCTestCase {
             name: "quux",
             value: 2,
             previous: 3)]
-        let _model = RatesModel(
+        let _model = MainExchangeRates(
             date: "Foo",
             previousDate: "Bar",
             previousURL: "Baz",
@@ -92,7 +92,7 @@ class RatesTests: XCTestCase {
         view = MockView()
         netowkService = MockNetworkService(model: _model)
         
-        var catchModel: RatesModel!
+        var catchModel: MainExchangeRates!
         
         netowkService.fetchRates(urlJson: urlJson) { result in
             catchModel = result

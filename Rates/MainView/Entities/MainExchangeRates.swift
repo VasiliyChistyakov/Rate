@@ -8,12 +8,12 @@
 import Foundation
 
 // MARK: - RatesModel
-struct RatesModel: Codable {
+struct MainExchangeRates: Codable {
 	let date: String
 	let previousDate: String
 	let previousURL: String
 	let timestamp: String
-	let valute: [String: Valute]
+	let valute: [String: MainRates]
 	
 	enum CodingKeys: String, CodingKey {
 		case date = "Date"
@@ -25,7 +25,7 @@ struct RatesModel: Codable {
 }
 
 // MARK: - Valute
-struct Valute: Codable {
+struct MainRates: Codable {
 	let id: String
 	let numCode: String
 	let charCode: String

@@ -8,7 +8,6 @@
 import Foundation
 
 protocol APIService {
-	
 	// MARK: RatesInfo
-	func fetchRates(urlJson: String, complitionHandler: @escaping (RatesModel) -> Void)
+	func fetchRates(urlJson: String, complitionHandler: @escaping (Result<MainExchangeRates,Error>) -> Void)
 }

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol MainWireframeProtocol: AnyObject {
-	static func CreateMainModule() -> UIViewController
+	static func CreateMainModule(_ scene: UIWindowScene?) -> UIViewController?
 }
 
 protocol MainPresenterProtocol: AnyObject {
@@ -19,18 +19,15 @@ protocol MainPresenterProtocol: AnyObject {
 	
 	// Уведомление от View к Presenter
 	var listsOfcurrencies: [String] { get set }
+    
 	func viewDidLoad()
-    func inputData(input: String?, picked: String?, model: RatesModel?)
-    func outputData(output: String?, picked: String?, model: RatesModel?)
+    func configure(_ source: MainCalculationSource, text: String?, picked: String?, model: MainExchangeRates?)
 }
 
 protocol MainViewProtocol: AnyObject {
-    
 	// Запрос от Presenter к View
-	func showCurrency(_ showList: RatesModel?)
-	func showUsername(_ username: String)
-    func showInput(_ text: String)
-    func showOutput(_ text: String)
+	func showCurrency(_ showList: MainExchangeRates?)
+    func showView(_ value: MainCalculationRecive)
 }
 
 protocol MainInteractorInputProtocol: AnyObject {
@@ -38,16 +35,12 @@ protocol MainInteractorInputProtocol: AnyObject {
 	
 	// Запрос от Presenter к Interactor
 	func fetchData()
-    func fetchiInput(input: String, picked: String, model: RatesModel)
-    func fetchiOutput(output: String, picked: String, model: RatesModel)
+    func setCalculation(_ data: MainCalculation)
 //	func fetchFirebaseUserData()
 }
 
 protocol MainInteractorOutputProtocol: AnyObject {
-	
 	// Ответ от Interactor к Presenter
-	func onCurrencyReceive(_ list: RatesModel)
-	func onUserDataReceive(_ firebaseData: NSDictionary?)
-    func onInputReceive(_ text: String)
-    func onOutputReceive(_ text: String)
+	func onCurrencyReceive(_ list: MainExchangeRates)
+    func onRecevie(_ data: MainCalculationRecive)
 }

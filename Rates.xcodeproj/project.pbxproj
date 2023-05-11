@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3B1FBC2A07DE7A001894F4 /* MainCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B1FBB2A07DE7A001894F4 /* MainCalculation.swift */; };
+		4E472C7F2A081D5900131E96 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E472C7E2A081D5900131E96 /* Services.swift */; };
+		4E472C832A082F2600131E96 /* AppDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E472C822A082F2600131E96 /* AppDelegateProtocol.swift */; };
+		4E472C852A08306B00131E96 /* DIAssembler .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E472C842A08306B00131E96 /* DIAssembler .swift */; };
+		4E472C872A083C8100131E96 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E472C862A083C8100131E96 /* DependencyResolver.swift */; };
 		FD258CA628D75A02005FE615 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258C9828D75A02005FE615 /* MainPresenter.swift */; };
 		FD258CA728D75A02005FE615 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258C9A28D75A02005FE615 /* MainWireframe.swift */; };
-		FD258CA828D75A02005FE615 /* ShapeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258C9D28D75A02005FE615 /* ShapeHeaderView.swift */; };
-		FD258CA928D75A02005FE615 /* ShapeHedearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258C9E28D75A02005FE615 /* ShapeHedearCell.swift */; };
 		FD258CAA28D75A02005FE615 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258C9F28D75A02005FE615 /* MainViewController.swift */; };
 		FD258CAB28D75A02005FE615 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CA128D75A02005FE615 /* ViewModelProtocol.swift */; };
 		FD258CAC28D75A02005FE615 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CA328D75A02005FE615 /* MainInteractor.swift */; };
-		FD258CAD28D75A02005FE615 /* RatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CA528D75A02005FE615 /* RatesModel.swift */; };
+		FD258CAD28D75A02005FE615 /* MainExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CA528D75A02005FE615 /* MainExchangeRates.swift */; };
 		FD258CB228D75AD2005FE615 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CAF28D75AD2005FE615 /* Extensions.swift */; };
-		FD258CB328D75AD2005FE615 /* UIcolors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CB028D75AD2005FE615 /* UIcolors.swift */; };
-		FD258CB428D75AD2005FE615 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CB128D75AD2005FE615 /* UIBezierPath.swift */; };
 		FD258CBB28D75B62005FE615 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CB628D75B62005FE615 /* Constants.swift */; };
 		FD258CBD28D75B62005FE615 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CB828D75B62005FE615 /* NetworkingManager.swift */; };
 		FD258CBE28D75B62005FE615 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD258CBA28D75B62005FE615 /* APIService.swift */; };
@@ -47,17 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E3B1FBB2A07DE7A001894F4 /* MainCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalculation.swift; sourceTree = "<group>"; };
+		4E472C7E2A081D5900131E96 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		4E472C822A082F2600131E96 /* AppDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateProtocol.swift; sourceTree = "<group>"; };
+		4E472C842A08306B00131E96 /* DIAssembler .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIAssembler .swift"; sourceTree = "<group>"; };
+		4E472C862A083C8100131E96 /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
 		FD258C9828D75A02005FE615 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		FD258C9A28D75A02005FE615 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
-		FD258C9D28D75A02005FE615 /* ShapeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeHeaderView.swift; sourceTree = "<group>"; };
-		FD258C9E28D75A02005FE615 /* ShapeHedearCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeHedearCell.swift; sourceTree = "<group>"; };
 		FD258C9F28D75A02005FE615 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FD258CA128D75A02005FE615 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		FD258CA328D75A02005FE615 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		FD258CA528D75A02005FE615 /* RatesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatesModel.swift; sourceTree = "<group>"; };
+		FD258CA528D75A02005FE615 /* MainExchangeRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainExchangeRates.swift; sourceTree = "<group>"; };
 		FD258CAF28D75AD2005FE615 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		FD258CB028D75AD2005FE615 /* UIcolors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolors.swift; sourceTree = "<group>"; };
-		FD258CB128D75AD2005FE615 /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
 		FD258CB628D75B62005FE615 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FD258CB828D75B62005FE615 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		FD258CBA28D75B62005FE615 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -98,7 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD258C9628D75A02005FE615 /* CalculatorRatesView */ = {
+		4E472C882A0A1A2B00131E96 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4E472C7E2A081D5900131E96 /* Services.swift */,
+				4E472C842A08306B00131E96 /* DIAssembler .swift */,
+				4E472C862A083C8100131E96 /* DependencyResolver.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		FD258C9628D75A02005FE615 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				FD258C9728D75A02005FE615 /* Presenter */,
@@ -108,7 +120,7 @@
 				FD258CA228D75A02005FE615 /* Interactor */,
 				FD258CA428D75A02005FE615 /* Entities */,
 			);
-			path = CalculatorRatesView;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		FD258C9728D75A02005FE615 /* Presenter */ = {
@@ -130,19 +142,9 @@
 		FD258C9B28D75A02005FE615 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FD258C9C28D75A02005FE615 /* ShapeHeader */,
 				FD258C9F28D75A02005FE615 /* MainViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FD258C9C28D75A02005FE615 /* ShapeHeader */ = {
-			isa = PBXGroup;
-			children = (
-				FD258C9D28D75A02005FE615 /* ShapeHeaderView.swift */,
-				FD258C9E28D75A02005FE615 /* ShapeHedearCell.swift */,
-			);
-			path = ShapeHeader;
 			sourceTree = "<group>";
 		};
 		FD258CA028D75A02005FE615 /* Protocols */ = {
@@ -164,7 +166,8 @@
 		FD258CA428D75A02005FE615 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				FD258CA528D75A02005FE615 /* RatesModel.swift */,
+				FD258CA528D75A02005FE615 /* MainExchangeRates.swift */,
+				4E3B1FBB2A07DE7A001894F4 /* MainCalculation.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -173,8 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				FD258CAF28D75AD2005FE615 /* Extensions.swift */,
-				FD258CB028D75AD2005FE615 /* UIcolors.swift */,
-				FD258CB128D75AD2005FE615 /* UIBezierPath.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,10 +221,12 @@
 		FD3CBFFD28D685BD00EE8A90 /* Rates */ = {
 			isa = PBXGroup;
 			children = (
+				4E472C822A082F2600131E96 /* AppDelegateProtocol.swift */,
 				FD3CBFFE28D685BD00EE8A90 /* AppDelegate.swift */,
 				FD3CC00028D685BD00EE8A90 /* SceneDelegate.swift */,
+				4E472C882A0A1A2B00131E96 /* AppCoordinator */,
 				FD258CAE28D75AD2005FE615 /* Extensions */,
-				FD258C9628D75A02005FE615 /* CalculatorRatesView */,
+				FD258C9628D75A02005FE615 /* MainView */,
 				FD258CB528D75B62005FE615 /* Services */,
 				FD3CC00728D685C300EE8A90 /* Assets.xcassets */,
 				FD3CC00C28D685C300EE8A90 /* Info.plist */,
@@ -380,19 +383,20 @@
 				FD258CBD28D75B62005FE615 /* NetworkingManager.swift in Sources */,
 				FD258CA728D75A02005FE615 /* MainWireframe.swift in Sources */,
 				FD3CBFFF28D685BD00EE8A90 /* AppDelegate.swift in Sources */,
+				4E472C7F2A081D5900131E96 /* Services.swift in Sources */,
 				FD258CAC28D75A02005FE615 /* MainInteractor.swift in Sources */,
 				FD3CC00128D685BD00EE8A90 /* SceneDelegate.swift in Sources */,
+				4E3B1FBC2A07DE7A001894F4 /* MainCalculation.swift in Sources */,
 				FD258CBB28D75B62005FE615 /* Constants.swift in Sources */,
+				4E472C852A08306B00131E96 /* DIAssembler .swift in Sources */,
 				FD258CA628D75A02005FE615 /* MainPresenter.swift in Sources */,
-				FD258CA928D75A02005FE615 /* ShapeHedearCell.swift in Sources */,
-				FD258CB328D75AD2005FE615 /* UIcolors.swift in Sources */,
 				FD258CB228D75AD2005FE615 /* Extensions.swift in Sources */,
-				FD258CA828D75A02005FE615 /* ShapeHeaderView.swift in Sources */,
 				FD258CAA28D75A02005FE615 /* MainViewController.swift in Sources */,
-				FD258CAD28D75A02005FE615 /* RatesModel.swift in Sources */,
+				FD258CAD28D75A02005FE615 /* MainExchangeRates.swift in Sources */,
 				FD258CAB28D75A02005FE615 /* ViewModelProtocol.swift in Sources */,
+				4E472C872A083C8100131E96 /* DependencyResolver.swift in Sources */,
+				4E472C832A082F2600131E96 /* AppDelegateProtocol.swift in Sources */,
 				FD258CBE28D75B62005FE615 /* APIService.swift in Sources */,
-				FD258CB428D75AD2005FE615 /* UIBezierPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

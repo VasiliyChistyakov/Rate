@@ -9,8 +9,21 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var delegates: [AppDelegateProtocol] = [
+        DIAssembler()
+        ]
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        for ind in delegates.indices.reversed() {
+            let del = delegates[ind]
+            if !del.initModule(application: application, options: launchOptions) {
+                print("Problem occured while loading a delegate: \(del.description())")
+                return false
+            }
+            if !del.neededAfterInit {
+                delegates.remove(at: ind)
+            }
+        }
         return true
     }
 
